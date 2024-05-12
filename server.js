@@ -145,7 +145,6 @@ async function initializeShareDocument() {
   console.log("Document sharing successful:", shareResponse);
 }
 
-// Function to handle document sharing
 async function shareDocument(resourceAddress, userId, role, customMessage) {
   const requestDigest = await getRequestDigest();
   const body = {
@@ -190,7 +189,7 @@ async function shareDocument(resourceAddress, userId, role, customMessage) {
   }
 }
 
-// Function to get the SharePoint request digest
+// get the SharePoint request digest
 async function getRequestDigest() {
   const url = `${siteUrl}/_api/contextinfo`;
   try {
